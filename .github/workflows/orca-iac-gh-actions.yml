@@ -56,3 +56,6 @@ jobs:
           sarif_file: results/iac.sarif
           category: iac-scan
         if: always() 
+      - name: Upload SARIF results 2
+        run: |
+          cat results/iac.sarif
