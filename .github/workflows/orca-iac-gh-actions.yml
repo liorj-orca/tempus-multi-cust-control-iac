@@ -59,3 +59,4 @@ jobs:
       - name: Upload SARIF results 2
         run: |
           cat results/iac.sarif
+        if: always() 
