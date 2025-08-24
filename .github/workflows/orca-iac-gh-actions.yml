@@ -31,7 +31,7 @@ jobs:
     name: Orca IaC Scan
     runs-on: ubuntu-latest
     env:
-      PROJECT_KEY: ${{ secrets.project_key }}
+      PROJECT_KEY: default
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
